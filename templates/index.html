@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proctoring System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css')}}">
+</head>
+<body>
+
+
+<div class="container">
+    <h1>Online Exam Proctoring</h1>
+    <img src="{{ url_for('video_feed') }}" width="100%">
+    <form action="{{ url_for('endexam') }}" method="post">
+        <button type="submit" style="font-size: 16px;">End Exam <i class="fa fa-check-circle-o"  style="font-size:16px"></i></button>
+    </form>
+</div>
+
+
+
+</div>
+</body>
+</html>
