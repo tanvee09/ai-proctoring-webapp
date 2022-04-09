@@ -247,7 +247,7 @@ def gen_frames():
             break
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
     framecount = 0
     cheatingframe = 0

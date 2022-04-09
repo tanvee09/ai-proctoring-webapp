@@ -2,10 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Summary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='endexam.css')}}">
 </head>
 <body>
-    <h1>Exam Ended</h1>
-    <h2>Cheating score: {{score}} %</h2>
+    <div>
+        <h1 style="color: rgb(174, 255, 174); text-align: center ">Exam Ended</h1>
+        <h2>Cheating score: {{score}} %</h2>
+
+        <form action="/" method="post">
+            <button type="submit" style="font-size: 16px;">Start New Exam <i class="fa fa-check-circle-o"  style="font-size:16px"></i></button>
+        </form>
+
+    </div>
 </body>
 </html>

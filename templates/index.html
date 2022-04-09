@@ -12,7 +12,7 @@
 <div class="container">
     <h1>Online Exam Proctoring</h1>
     <img src="{{ url_for('video_feed') }}" width="100%">
-    <form action="{{ url_for('endexam') }}" method="post">
+    <form action="{{ url_for('endexam') }}" method="get">
         <button type="submit" style="font-size: 16px;">End Exam <i class="fa fa-check-circle-o"  style="font-size:16px"></i></button>
     </form>
 </div>
